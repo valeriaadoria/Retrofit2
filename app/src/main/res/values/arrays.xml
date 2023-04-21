@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="razas">
+        <item>"spaniel"</item>
+        <item>"labrador"</item>
+        <item>"husky"</item>
+        <item>"pug"</item>
+
+    </string-array>
+</resources>
