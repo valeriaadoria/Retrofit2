@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import edu.iest.rfit.adapter.PerroAdapter
@@ -25,6 +26,10 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
         spinner = findViewById<Spinner>(R.id.spinner)
         recycleview=findViewById(R.id.RVPerros)
+        var administradorDeLayouts = GridLayoutManager(this,2)
+        recycleview.layoutManager = administradorDeLayouts
+
+
         spinner.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 // Acciones a realizar cuando se selecciona una opción en el Spinner
